@@ -20,20 +20,23 @@
 % \titlespacing*{\section}{0pt}{10ex}{0pt}
 
 \section{แผนการทำงาน}
-\quad ใช้รูปแบบ Software Development Models เป็นรูปแบบ Scrum โดยแบ่งการทำงานเป็นรอบ โดยที่แต่ละรอบการทำงานมีระยะเวลา 1 สัปดาห์ในช่วงท้ายของแต่ละสัปดาห์จะมีการตรวจสอบความคืบหน้าของการดำเนินงานในส่วนต่าง ๆ และทุก ๆ ท้ายของรอบการทำงานจะมีการประชุมทบทวนแผนงานที่จะทำสำหรับรอบถัดไปร่วมกันเพื่อยืนยันแผนการดำเนินงานหากมีการเปลี่ยนแปลงเกิดขึ้น 
+\quad ใช้รูปแบบ software development models เป็นรูปแบบ scrum โดยแบ่งการทำงานเป็นรอบ 
+โดยที่แต่ละรอบการทำงานมีระยะเวลา 1 สัปดาห์ในช่วงท้ายของแต่ละสัปดาห์จะมีการตรวจสอบความคืบหน้าของการดำเนินงานในส่วนต่าง ๆ 
+และ ทุก ๆ ท้ายของรอบการทำงานจะมีการประชุมทบทวนแผนงานที่จะทำสำหรับรอบถัดไปร่วมกันเพื่อยืนยันแผนการดำเนินงานหากมีการเปลี่ยนแปลงเกิดขึ้น 
+รวมถึงสรุปข้อผิดพลาดจากการทำงานในรอบนี้ด้วย
 \section{การทำงานของระบบ}
 \begin{figure}
 \begin{center}
-\includegraphics[width=14cm,keepaspectratio]{./images/usecaseDiagram.jpg}
+\includegraphics[width=14cm,keepaspectratio]{./images/penhwang_er_diagram_2.jpg}
 \end{center}
-\caption[Poem]{แสดง Use case diagram ซึ่งแสดงให้เห็นกลุ่มผู้ใช้งานทั้ง 4 กลุ่มประกอบด้วย พนักงานทั่วไป (Employee) พนักงานHR (HR employee) เจ้าของกิจการ (Company owner) และ Admin รวมถึงฟังก์ชันที่ผู้ใช้กลุ่มนั้นใช้งานได้}
+\caption[Poem]{แสดง use case diagram ซึ่งแสดงให้เห็นกลุ่มผู้ใช้งานทั้ง 2 กลุ่มประกอบด้วย พนักงานทั่วไป (employee) และ พนักงาน hr (human resources employee)
 \end{figure}
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=14cm,keepaspectratio]{./images/ERdiagram2.jpg}
+\includegraphics[width=14cm,keepaspectratio]{./images/penhwang_db_schema.jpg}
 \end{center}
-\caption[Poem]{แสดง E-R Diagram(Entity-Relationship Diagram)ซึ่งแสดงรายละเอียดของข้อมูลของแต่ละ Entity ประกอบด้วย employee และ company}
+\caption[Poem]{แสดง E-R diagram (Entity-Relationship diagram) ซึ่งแสดงรายละเอียดของข้อมูลของแต่ละ entity ประกอบด้วย พนักงาน บริษัท และ คำขอ}
 \end{figure}
 
 \begin{figure}
@@ -42,8 +45,8 @@
 \end{center}
 \caption[Poem]{
   แสดงโครงสร้างของระบบ ซึ่งแบ่งเป็น 2 ส่วนใหญ่ ๆ คือ 
-  Front-end ประกอบด้วย Line application (Line Bot) และ Nuxt.js 
-  และ Back-end (Google firebase) ซึ่งประกอบด้วย firebase cloud functions และ firebase firestore 
-  โดย มี Google dialogflow ขั้นกลางระหว่าง Line application และ firebase เพื่อทำหน้าที่แปลความหมายข้อความ
+  front-end ประกอบด้วย LINE application (LINE bot) และ Nuxt.js 
+  และ back-end (Google firebase) ซึ่งประกอบด้วย firebase cloud functions และ firebase firestore 
+  โดย มี Google dialogflow ขั้นกลางระหว่าง LINE application และ firebase เพื่อทำหน้าที่แปลความหมายข้อความ
 }
 \end{figure}
