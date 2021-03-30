@@ -1,11 +1,11 @@
 \chapter{\ifproject%
 \ifcpe โครงสร้างและขั้นตอนการทำงาน\else Project Structure and Methodology\fi
 \else%
-\ifcpe โครงสร้างของโครงงาน\else Project Structure\fi
+\ifcpe โครงสร้างและขั้นตอนการทำงาน\else Project Structure\fi
 \fi
 }
 
-ในบทนี้จะกล่าวถึงหลักการ และการออกแบบระบบ
+% ในบทนี้จะกล่าวถึงหลักการ และการออกแบบระบบ
 
 \makeatletter
 
@@ -27,23 +27,23 @@
 \section{การทำงานของระบบ}
 \begin{figure}
 \begin{center}
-\includegraphics[width=14cm,keepaspectratio]{./images/penhwang_er_diagram_2.jpg}
+\includegraphics[width=10cm,keepaspectratio]{./images/penhwang_er_diagram_2.jpg}
 \end{center}
-\caption[Poem]{แสดง use case diagram ซึ่งแสดงให้เห็นกลุ่มผู้ใช้งานทั้ง 2 กลุ่มประกอบด้วย พนักงานทั่วไป (employee) และ พนักงาน hr (human resources employee)
+\caption[แสดง use case diagram]{แสดง use case diagram ซึ่งแสดงให้เห็นกลุ่มผู้ใช้งานทั้ง 2 กลุ่มประกอบด้วย พนักงานทั่วไป (employee) และ พนักงาน hr (human resources employee)}
 \end{figure}
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=14cm,keepaspectratio]{./images/penhwang_db_schema.jpg}
 \end{center}
-\caption[Poem]{แสดง E-R diagram (Entity-Relationship diagram) ซึ่งแสดงรายละเอียดของข้อมูลของแต่ละ entity ประกอบด้วย พนักงาน บริษัท และ คำขอ}
+\caption[แสดง E-R diagram]{แสดง E-R diagram (Entity-Relationship diagram) ซึ่งแสดงรายละเอียดของข้อมูลของแต่ละ entity ประกอบด้วย พนักงาน และ บริษัท}
 \end{figure}
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=14cm,keepaspectratio]{./images/structure.jpg}
 \end{center}
-\caption[Poem]{
+\caption[แสดงโครงสร้างของระบบ]{
   แสดงโครงสร้างของระบบ ซึ่งแบ่งเป็น 2 ส่วนใหญ่ ๆ คือ 
   front-end ประกอบด้วย LINE application (LINE bot) และ Nuxt.js 
   และ back-end (Google firebase) ซึ่งประกอบด้วย firebase cloud functions และ firebase firestore 
